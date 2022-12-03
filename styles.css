@@ -71,8 +71,8 @@ html, body {
 }
 
 .D-Ct2Lnk {
-  padding: 20px 10px;
-  margin: 30px 0;
+  padding: 15px 10px;
+  margin: 20px 0;
 }
 
 .A-Ct2Lnk {
@@ -82,18 +82,9 @@ html, body {
   padding: 15px 50px;
   background-color: #16181e;
   border-radius: 100px;
+  transition-duration: 0.3s;
 }
 
-.A-Ct2LnkP {transition-duration: 0.5s;}
-
-.A-Ct2LnkP:hover {
-  background-color: #00ffff;
-  transition-duration: 0.5s;
-  color: black;
-  padding: 18px 75px;
-}
-
-.A-Ct2LnkN {transition-duration: 0.3s;}
 .A-Ct2LnkN:hover {
   background-color: #4484fc;
   color: black;
