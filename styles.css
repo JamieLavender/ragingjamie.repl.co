@@ -15,8 +15,26 @@ html, body {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 590px) {
   .nav a:not(:first-child) {display: none;}
+  .nav a.A-NvgHid {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive.a.A-NvgHid {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.response a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /* Styling for navigation bar */
