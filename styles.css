@@ -1,12 +1,77 @@
+:root {
+  --bg-color: #272934;
+}
+
 html, body {
   height: 100%;
   width: 100%;
   font-family: Arial;
-  background-color: #272934;
+  background-color: var(--bg-color);
   color: white;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.D-S1, .D-S2 {
+/* Responsiveness */
+@media screen and (max-width: 570px) {
+  .nav a:not(:first-child) {display: none;}
+}
+
+/* Styling for navigation bar */
+.nav {
+  background-color: #000;
+  overflow: hidden;
+  padding: 10px;
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.A-Nvg {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 13.25px 24px;
+  border-radius: 4px;
+  text-align: center;
+  transition-duration: 0.2s;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.A-Nvg:hover {
+  background-color: #191970;
+  transition-duration: 0.2s
+}
+
+.A-NvgHid {
+  display: none;
+}
+
+.A-NvgP {
+  float: left;
+  display: block;
+  text-decoration: none;
+  padding: 13.25px 24px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+.A-NvgP:hover {cursor: default;}
+
+/* Separator Styling */
+.separator {height: 10%;}
+
+/* Styling for Divs */
+
+.D-S1, .D-S2, .D-S3, .D-S4, .D-S5 {
   text-align: center;
   display: flex;
   align-items: center;
@@ -14,27 +79,21 @@ html, body {
   padding: 0.5% 0;
 }
 
-.S-Ct1, .S-Ct2 {
-  border-radius: 15px;
+.D-S1 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/* Styling for spans directly within divs */
+
+.S-Ct1, .S-Ct2, .S-Ct3, .S-Ct4, .S-Ct5 {
   padding: 30px 20px;
   max-width: 750px;
   width: 85%;
+  height: 100%;
 }
 
-.S-Ct1 a img:hover {
-  background-color: #00000084;
-  transition-duration: 0.3s;
-}
-
-.S-Ct1 > a {
-  padding: 10px 10px;
-}
-
-.S-Ct1 > a > img {
-  padding: 12px 12px;
-  border-radius: 4px;
-  transition-duration: 0.3s;
-}
+/* First Div Styling */
 
 .I-Ct1Ig {
   border-radius: 500px;
@@ -44,6 +103,10 @@ html, body {
 .I-Ct1Ig {
   -webkit-animation: I-Ct1IgM 2s infinite  alternate;
   animation: I-Ct1IgM 2s infinite  alternate;
+  height: 25%;
+  width: 25%;
+  min-height: 100px;
+  min-width: 100px;
 }
 @-webkit-keyframes I-Ct1IgM {
   0% { transform: translateY(0); }
@@ -54,61 +117,42 @@ html, body {
   100% { transform: translateY(-20px); }
 }
 
-.S-Ct1Tg {
-  border: 1px solid;
-  border-radius: 100cm;
-  padding: 3px 12px;
-  border-color: #9195AB;
-  color: #9195AB;
-}
+/* Second Section Styling */
 
-.S-Ct1Tg:hover {
-  cursor: default;
-}
+/* Third Section Styling */
 
-.S-Ct2 {
-  padding: 15px;
-}
-
-.D-Ct2Lnk {
-  padding: 15px 10px;
-  margin: 20px 0;
-}
-
-.A-Ct2Lnk {
+/* Fourth Section Styling */
+.A-S4Ct4Lnk {
   text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-  padding: 15px 50px;
-  background-color: #16181e;
-  border-radius: 100px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 16px;
+  transition-duration: 0.3s;
+  font-size: 14px;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.A-S4Ct4Lnk:hover {
+  background-color: black;
   transition-duration: 0.3s;
 }
 
-.A-Ct2LnkN:hover {
-  background-color: #4484fc;
-  color: black;
-  transition-duration: 0.3s;
+.D-S4Ct4LnkA {
+  padding: 10px 10px;
+  margin-top: 15px;
 }
 
-p {
-  color: #9195AB;
-}
+.NAC:hover {cursor: not-allowed;}
 
-hr {
-  color: #9195AB;
-}
+/* Fifth Section Styling */
+
+/* Footer styling */
 
 footer {
   text-align: center;
   padding: 0.5% 0;
   margin-bottom: 0px;
   margin-top: auto;
-}
-
-.S-FtCt {
-  text-align: center;
-  padding: 30px 20px;
-  max-width: 750px;
-  width: 85%;
 }
