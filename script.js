@@ -1,8 +1,8 @@
 function navToggle() {
-  var navbar = document.getElementsById("nav");
-  if (navbar.className === "nav") {
-    navbar.className =+ " responsive";
+  var navBar = document.getElementById("navBar");
+  if (navBar.className === "nav") {
+    navBar.className += " responsive";
   } else {
-    navbar.className = "nav";
+    navBar.className = "nav";
   }
 }
