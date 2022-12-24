@@ -6,3 +6,7 @@ function navToggle() {
     navBar.className = "nav";
   }
 }
+
+function colorModeToggle() {
+  
+}
