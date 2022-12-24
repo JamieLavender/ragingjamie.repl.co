@@ -1,25 +1,29 @@
 :root {
-  --bg-color: #272934;
+  --bg-color-1: #080821;
+  --bg-color-2: #101047;
+  --bg-color-3: #1d1d90;
+  --text-color-1: #fff;
 }
 
 html, body {
   height: 100%;
   width: 100%;
   font-family: Arial;
-  background-color: var(--bg-color);
-  color: white;
+  background-color: var(--bg-color-1);
+  color: var(--text-color-1);
   text-align: center;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  scroll-behavior: smooth;
 }
 
 /* Styling for navigation bar */
 .nav {
-  background-color: #000;
+  background-color: var(--bg-color-2);
   overflow: hidden;
   padding: 10px;
-  max-width: 570px;
+  max-width: 425px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -29,52 +33,51 @@ html, body {
   float: left;
   display: block;
   text-decoration: none;
-  color: inherit;
-  padding: 13.25px 24px;
+  color: var(--text-color-1);
+  padding: 14px 24px;
+  margin-left: 3px;
+  margin-right: 3px;
   border-radius: 4px;
   text-align: center;
   transition-duration: 0.2s;
   font-size: 16px;
-  margin-left: 10px;
+  width: 25%;
+  max-width: 60px;
+}
+
+.A-NvgI {
+  padding: 7px 10px!important;
+  max-width: 40px;
 }
 
 .A-Nvg:hover {
-  background-color: #191970;
+  background-color: var(--bg-color-3);
   transition-duration: 0.2s
 }
 
 .A-NvgHid {
   display: none;
+  min-width: 125px;
+  max-width: 125px;
 }
 
 .A-NvgTog {
   display: show;
 }
 
-.A-NvgP {
-  float: left;
-  display: block;
-  text-decoration: none;
-  padding: 13.25px 24px;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 16px;
-  color: black;
-  background-color: #508dff;
-}
-
-.A-NvgP:hover {cursor: default;}
-
 /* Navbar Responsiveness */
-@media screen and (max-width: 590px) {
-  .nav a:not(:first-child) {display: none;}
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {
+    display: none;
+  }
   .nav a.A-NvgHid {
+    margin: 0 auto;
+    display: inline;
     float: right;
-    display: block;
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 600px) {
   .nav.responsive {position: relative;}
   .nav.responsive.a.A-NvgHid {
     position: absolute;
@@ -85,6 +88,7 @@ html, body {
     float: none;
     display: block;
     width: 75%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     min-width: 100px;
@@ -92,15 +96,15 @@ html, body {
 }
 
 /* Separator Styling */
-.separator {height: 10%;}
+.separator {
+  height: 10%;
+  max-height: 100px;
+}
 
 /* Styling for Divs */
 
 .D-S1, .D-S2, .D-S3, .D-S4, .D-S5 {
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0.5% 0;
 }
 
@@ -144,34 +148,70 @@ html, body {
 
 /* Second Section Styling */
 
-/* Third Section Styling */
+/* Third + Fourth Section Styling */
+.D-S3A, .D-S4A {
+  text-align: center;
+}
 
-/* Fourth Section Styling */
-.A-S4Ct4Lnk {
+.D-S3B, .D-S4B {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.D-Ct3FBxD > img {
+  height: 50%;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.D-Ct4FBxD > img {
+  height: 30%;
+  width: 30%;
+  min-height: 32px;
+  min-width: 32px;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.D-Ct3FBxD > h4 > a, .D-Ct4FBxD > h4 > a {
+  color: #1fa9ff;
   text-decoration: none;
-  color: white;
-  border: 1px solid black;
+}
+
+.D-Ct3FBx, .D-Ct4FBx {
+  background-color: var(--bg-color-2);
   border-radius: 4px;
-  padding: 10px 16px;
-  transition-duration: 0.3s;
-  font-size: 14px;
-  width: 100%;
-  min-width: 1000px;
+  padding: 10px;
+  flex: 50%;
+  width: 45%;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
 }
 
-.A-S4Ct4Lnk:hover {
-  background-color: black;
-  transition-duration: 0.3s;
+@media (min-width: 1200px) {
+  .D-Ct3FBx {
+    width: 45%;
+  }
+  .D-Ct4FBx {
+    width: 30%;
+  }
 }
 
-.D-S4Ct4LnkA {
-  padding: 10px 10px;
-  margin-top: 15px;
+@media (max-width: 600px) {
+  .D-S3B, .D-S4B {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .D-Ct3FBx, .D-Ct4FBx {
+    width: 90%;
+    min-width: 100px;
+  }
 }
-
-.NAC:hover {cursor: not-allowed;}
-
-/* Fifth Section Styling */
 
 /* Footer styling */
 
