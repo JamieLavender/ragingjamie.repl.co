@@ -9,7 +9,6 @@
   <meta name="description" content="My website!">
   <meta property="og:image" content="CoolPFP.png">
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <script src="scripts.js"></script>
   <link rel="icon" type="image/x-icon" href="CoolPFP.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,7 +16,7 @@
 <body>
 
   <div class="nav" id="navBar">
-    <a class="A-Nvg A-NvgI" href="https://discord.com/users/691033359367012422"><img src="discord.png" height="30px"
+    <a class="A-Nvg A-NvgI" href="https://discord.gg/N9uHy4U44q" target="_blank"><img src="discord.png" height="30px"
         width="30px" tooltip="RagingJamie#3002"></a>
     <a class="A-Nvg" href="#scrollAbout">About</a>
     <a class="A-Nvg" href="#scrollProjects">Projects</a>
@@ -70,11 +69,12 @@
 
       <div class="D-Ct3FBx" style="flex-basis: auto;">
         <div class="D-Ct3FBxD">
-          <img src="">
+          <img src="dragon-repeller.png">
         </div>
         <div class="D-Ct3FBxD">
-          <h4 style="font-size: 18px;"><a>Dragon Repeller</a></h4>
-          <p>Coming Soon! ⏱️</p>
+          <h4 style="font-size: 18px;"><a href="https://dragonrepeller.ragingjamie.repl.co" target="_blank">Dragon
+              Repeller</a></h4>
+          <p>Help the town by defeating the dragon that is preventing them from leaving the town!</p>
         </div>
       </div>
 
@@ -83,8 +83,17 @@
           <img src="">
         </div>
         <div class="D-Ct3FBxD">
-          <h4 style="font-size: 18px;"><a>Coming Soon!</a></< /h4>
-            <p>⏱️</p>
+          <h4 style="font-size: 18px;"><a>Coming Soon!</a></h4>
+          <p>⏱️</p>
+        </div>
+      </div>
+      <div class="D-Ct3FBx" style="flex-basis: auto;">
+        <div class="D-Ct3FBxD">
+          <img src="">
+        </div>
+        <div class="D-Ct3FBxD">
+          <h4 style="font-size: 18px;"><a>Coming Soon!</a></h4>
+          <p>⏱️</p>
         </div>
       </div>
 
@@ -112,10 +121,10 @@
 
       <div class="D-Ct4FBx" style="flex-basis: auto;">
         <div class="D-Ct4FBxD">
-          <img src="https://cdn.discordapp.com/icons/983858506140639352/f6de3b53f6262f7129f0f3e0fb30c4ba.webp?size=240">
+          <img src="https://cdn.discordapp.com/icons/983858506140639352/4e962dd24cc4d5c28d4e6ecf5bb3ea12.webp?size=240">
         </div>
         <div class="D-Ct4FBxD">
-          <h4 style="font-size: 18px;"><a href="https://discord.gg/FEDP6X6epf" target="_blank">Parallel Apps</a></h4>
+          <h4 style="font-size: 18px;"><a href="https://discord.gg/FEDP6X6epf" target="_blank">Parallel Studios</a></h4>
           <p>Administrator, Moderator and Support.</p>
         </div>
       </div>
@@ -125,7 +134,8 @@
           <img src="CoolPFP.png">
         </div>
         <div class="D-Ct4FBxD">
-          <h4 style="font-size: 18px;"><a href="https://discord.gg/N9uHy4U44q" target="_blank">RagingJamie's Town Hall</a></h4>
+          <h4 style="font-size: 18px;"><a href="https://discord.gg/N9uHy4U44q" target="_blank">RagingJamie's Town
+              Hall</a></h4>
           <p>Mayor</p>
         </div>
       </div>
@@ -136,25 +146,22 @@
 
   <div class="separator"></div>
 
-  <div class="info">
-    <p><i>Light mode and mobile UX updates are planned.</i></p>
-  </div>
-
 
   <hr>
 
   <footer>
     <span class="S-FtCt">
       <p>v0.8.40</p>
-      <p>© RagingJamie 2022-2023</p>
+      <p>© RagingJamie 2022-2023. All rights reserved.</p>
     </span>
   </footer>
 
 </body>
 
+<script src="scripts.js"></script>
 <script>
   function navToggle() {
-    const navBar = document.getElementById("navBar");
+    var navBar = document.getElementById("navBar");
     if (navBar.className === "nav") {
       navBar.className += " responsive";
     } else {
